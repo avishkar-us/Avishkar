@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avishkar Kubal - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            animation: fadeIn 1s ease-out;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #2a2a2a;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+        }
+        header p {
+            margin: 10px 0;
+            color: #555;
+        }
+        header a {
+            text-decoration: none;
+            color: #4a90e2;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        header a:hover {
+            color: #357abd;
+        }
+        section {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+            color: #2a2a2a;
+            font-weight: 600;
+            font-size: 1.5em;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        h3 {
+            margin: 10px 0;
+            color: #444;
+            font-weight: 500;
+        }
+        p {
+            margin: 5px 0;
+            color: #666;
+        }
+        ul {
+            padding-left: 20px;
+            list-style-type: disc;
+            color: #666;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+        .skills span {
+            background: #e3f2fd;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #2a2a2a;
+            transition: transform 0.3s;
+            display: inline-block;
+            margin: 5px;
+        }
+        .skills span:hover {
+            transform: scale(1.05);
+        }
+        .grid {
+            display: grid;
+            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>AVISHKAR KUBAL</h1>
+            <p>Contact <br> avishkar.us@gmail.com</p>
+            <div>
+                <a href="https://github.com/avishkar-us">GitHub</a>
+                <a href="https://linkedin.com/in/avishkar-us">LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="grid">
+            <!-- Left Column -->
+            <div>
+                <!-- Skills -->
+                <section>
+                    <h2>SKILLS</h2>
+                    <div class="skills">
+                        <span>Python</span>
+                        <span>HTML/CSS/JS</span>
+                        <span>C Programming</span>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section>
+                    <h2>EDUCATION</h2>
+                    <div>
+                        <h3>Bachelor's of Computer Applications</h3>
+                        <p>NGI, Pune | Present</p>
+                    </div>
+                    <div>
+                        <h3>XII (Pune Division)</h3>
+                        <p>RDTC, Pune | 66% | 2022</p>
+                    </div>
+                    <div>
+                        <h3>X (Kolhapur Division)</h3>
+                        <p>Abhinav Education Society, Satara | 70% | 2020</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div>
+                <!-- Experience -->
+                <section>
+                    <h2>EXPERIENCE</h2>
+                    <div>
+                        <h3>Corporate Communications and Data Coordinator</h3>
+                        <p>Dec 2024 - Present</p>
+                        <ul>
+                            <li>Managed corporate communications and data coordination</li>
+                            <li>Analyzed communication trends and synthesized data</li>
+                            <li>Improved operational efficiency by 30%</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Projects -->
+                <section>
+                    <h2>PROJECTS</h2>
+                    <div>
+                        <h3>Insights Analytics Engine</h3>
+                        <p>Developed analytics platform using C language</p>
+                        <ul>
+                            <li>Real-time data processing</li>
+                            <li>Automated statistical outputs</li>
+                            <li>Interactive dashboards</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Achievements -->
+        <section>
+            <h2>ACHIEVEMENTS & HOBBIES</h2>
+            <p>● Active GitHub contributor: Open-source projects and code collaboration</p>
+        </section>
+    </div>
+</body>
+</html>
